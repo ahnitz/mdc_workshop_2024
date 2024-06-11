@@ -13,7 +13,7 @@ pycbc_inference \
 # This reconstructs any marginalized parameters
 # and would be optional if you don't need them or
 # have sampled over all parameters directly (see reltime.ini)
-OMP_NUM_THREADS=1 python -m cProfile -o log2 `which pycbc_inference_model_stats` \
+pycbc_inference_model_stats \
 --input-file reltime.hdf \
 --output-file reltime_demarg.hdf \
 --nprocesses 2 \
